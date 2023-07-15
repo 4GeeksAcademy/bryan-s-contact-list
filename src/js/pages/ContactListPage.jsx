@@ -61,7 +61,11 @@ export default function ContactListPage() {
               <Link to={`/edit-contact/${contact.id}`} className="btn btn-lg mr-2">
                 <i className="bi bi-pencil"></i> {/* Edit icon */}
               </Link>
-              <button className="btn btn-lg" onClick={() => handleDeleteContact(contact.id)}>
+              <button className="btn btn-lg" onClick={() => {
+                if (window.confirm('Are you sure you want to delete this contact?')) {
+                  handleDeleteContact(contact.id);
+                }
+              }}>
                 <i className="bi bi-trash"></i> {/* Delete icon */}
               </button>
             </div>
