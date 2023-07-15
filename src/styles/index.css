@@ -1,3 +1,32 @@
-/* 
-    General Styles
-*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top, #5684FD, #61DBFB);
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #5684FD;
+    box-shadow: 5px 5px 5px rgba(87, 87, 87, 0.363);
+}
+
+.list-contacts {
+    padding: 0;
+    list-style: none;
+    box-shadow: 5px 5px 5px rgba(87, 87, 87, 0.363);
+}
